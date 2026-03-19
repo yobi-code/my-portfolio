@@ -2,16 +2,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="max-w-xl mx-auto">
+    <footer className="max-w-xl mx-auto m-4 p-2 flex flex-col justify-between item-center h-48 ">
       <div className="">
-        {/* Left - Name */}
-        <div className="flex">
-          <h2 className="">REGIE BOY</h2>
-          <p className="">© {new Date().getFullYear()} All rights reserved.</p>
-        </div>
-
         {/* Middle - Navigation */}
-        <div className="">
+        <div className="flex justify-around w-full">
           <Link href="#about" className="">
             About
           </Link>
@@ -24,24 +18,22 @@ const Footer = () => {
         </div>
 
         {/* Right - Socials */}
-        <div className="">
-          <a
-            href="https://github.com"
-            target="_blank"
-            className="hover:text-white"
-          >
+        <div className="flex justify-around w-full">
+          <a href="https://github.com" target="_blank" className="">
             GitHub
           </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            className="hover:text-white"
-          >
+          <a href="https://linkedin.com" target="_blank" className="">
             LinkedIn
           </a>
-          <a href="mailto:youremail@gmail.com" className="hover:text-white">
+          <a href="mailto:youremail@gmail.com" className="">
             Email
           </a>
+        </div>
+        {/* Left - Name */}
+
+        <div className=" flex text-center justify-center mt-8">
+          <h2 className="">REGIE BOY</h2>
+          <p className="">© {new Date().getFullYear()} All rights reserved.</p>
         </div>
       </div>
     </footer>

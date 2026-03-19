@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfileCard from "@/components/navbar";
+import ProfileCard from "@/components/profilecard";
 import About from "@/components/about";
 import Techstack from "@/components/techstack";
 import Footer from "@/components/footer";
